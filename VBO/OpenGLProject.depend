@@ -1,0 +1,117 @@
+# depslib dependency file v1.0
+1569944228 source:c:\users\rhass\onedrive\햞ea de trabalho\ufabc\cg\projetos\openglproject\main.cpp
+	<GLFW/glfw3.h>
+	<iostream>
+	<GL/glew.h>
+	<string>
+
+1555373964 c:\users\rhass\onedrive\햞ea de trabalho\ufabc\cg\projetos\openglproject\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl32.h>
+	<GLES2/gl2ext.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<GL/glcorearb.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+	<vulkan/vulkan.h>
+
+1501501581 c:\users\rhass\onedrive\햞ea de trabalho\ufabc\cg\projetos\openglproject\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1569944228 source:c:\users\rhass\onedrive\햞ea de trabalho\ufabc\cg\computacaograficaufabc\atividade00\main.cpp
+	<GLFW/glfw3.h>
+	<iostream>
+	<GL/glew.h>
+	<string>
+
+1555373964 c:\users\rhass\onedrive\햞ea de trabalho\ufabc\cg\computacaograficaufabc\atividade00\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl32.h>
+	<GLES2/gl2ext.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<GL/glcorearb.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+	<vulkan/vulkan.h>
+
+1501501581 c:\users\rhass\onedrive\햞ea de trabalho\ufabc\cg\computacaograficaufabc\atividade00\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1571145249 source:c:\users\rhass\google drive\ufabc\_ultimo\cg\computacaograficaufabc\atividade00 - vbo\main.cpp
+	<GLFW/glfw3.h>
+	<iostream>
+	<GL/glew.h>
+	<string>
+	<fstream>
+	<sstream>
+
+1555373964 c:\users\rhass\google drive\ufabc\_ultimo\cg\computacaograficaufabc\atividade00 - vbo\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl32.h>
+	<GLES2/gl2ext.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<GL/glcorearb.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+	<vulkan/vulkan.h>
+
+1501501581 c:\users\rhass\google drive\ufabc\_ultimo\cg\computacaograficaufabc\atividade00 - vbo\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
