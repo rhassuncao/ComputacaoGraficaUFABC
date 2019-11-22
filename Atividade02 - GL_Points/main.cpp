@@ -1,18 +1,19 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
+#define SCREEN_WIDTH 640
+#define SCREEN_HEIGHT 480
+
 int main( void )
 {
     GLFWwindow *window;
 
-    // Initialize the library
     if ( !glfwInit( ) )
     {
         return -1;
     }
 
-    // Create a windowed mode window and its OpenGL context
-    window = glfwCreateWindow( 640, 480, "Hello World", NULL, NULL );
+    window = glfwCreateWindow( SCREEN_WIDTH, SCREEN_HEIGHT, "GL Points", NULL, NULL );
 
     if ( !window )
     {
@@ -20,37 +21,46 @@ int main( void )
         return -1;
     }
 
-    // Make the window's context current
     glfwMakeContextCurrent( window );
 
-    float vertices[] =
-    {
-        0, 0.5, 0.0, // top corner
-        -0.5, -0.5, 0.0, // bottom left corner
-        0.5, -0.5, 0.0 // bottom right corner
-    };
+    //Mesmo codigo dos quads
+    glViewport( 0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT );
+    glMatrixMode( GL_PROJECTION );
+    glLoadIdentity( );
+    glOrtho( 0, SCREEN_WIDTH, 0, SCREEN_HEIGHT, 0, 1 );
+    glMatrixMode( GL_MODELVIEW );
+    glLoadIdentity( );
 
-    /* Loop until the user closes the window */
+    //Posicionamento dos pontos
+    GLfloat pointVertex[]  = { SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 };
+    GLfloat pointVertex2[] = { SCREEN_WIDTH * 0.75, SCREEN_HEIGHT / 2 };
+
     while ( !glfwWindowShouldClose( window ) )
     {
         glClear( GL_COLOR_BUFFER_BIT );
 
-        // Render OpenGL here
+        //Torna os pontos circularr
+        glEnable( GL_POINT_SMOOTH );
+        glEnableClientState( GL_VERTEX_ARRAY );
+        //Configura o tamanho do ponto
+        glPointSize( 50 );
+        glVertexPointer( 2, GL_FLOAT, 0, pointVertex );
+        //Especifica que serao desenhados pontos
+        glDrawArrays( GL_POINTS, 0, 1 );
+        glDisableClientState( GL_VERTEX_ARRAY );
+        glDisable( GL_POINT_SMOOTH );
 
-        glEnableClientState( GL_VERTEX_ARRAY ); // tell OpenGL that you're using a vertex array for fixed-function attribute
-        glVertexPointer( 3, GL_FLOAT, 0, vertices ); // point to the vertices to be used
-        glDrawArrays( GL_TRIANGLES, 0, 3 ); // draw the vertixes
-        glDisableClientState( GL_VERTEX_ARRAY ); // tell OpenGL that you're finished using the vertex arrayattribute
+        //Como smooth esta desligado desenha um ponto quadrado
+        glEnableClientState( GL_VERTEX_ARRAY );
+        glVertexPointer( 2, GL_FLOAT, 0, pointVertex2 );
+        glPointSize( 10 );
+        glDrawArrays( GL_POINTS, 0, 1 );
+        glDisableClientState( GL_VERTEX_ARRAY );
 
-
-        // Swap front and back buffers
         glfwSwapBuffers( window );
-
-        // Poll for and process events
         glfwPollEvents( );
     }
 
     glfwTerminate( );
-
     return 0;
 }
